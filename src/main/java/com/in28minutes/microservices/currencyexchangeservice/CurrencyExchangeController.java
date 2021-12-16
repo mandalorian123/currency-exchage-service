@@ -28,6 +28,7 @@ public class CurrencyExchangeController {
     {
         logger.info("retrieveExchangeValue called with {} to {}",from,to);
         String hello;
+        String feture01;
         CurrencyExchange currencyExchange=repository.findByFromAndTo(from,to);
         if(currencyExchange==null)
         {
